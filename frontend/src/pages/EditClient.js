@@ -57,6 +57,7 @@ export const EditClient = () => {
         return () => {
             isSubscripted = false;
         }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
 

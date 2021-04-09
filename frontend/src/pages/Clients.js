@@ -16,7 +16,6 @@ import Swal from 'sweetalert2'
 import { Alert } from '@material-ui/lab';
 import { useFormik } from 'formik';
 import InputAdornment from "@material-ui/core/InputAdornment";
-import CancelRoundedIcon from '@material-ui/icons/CancelRounded'
 
 export const Clients = () => {
 
@@ -69,7 +68,7 @@ export const Clients = () => {
             cancelButtonColor: "#d33",
         }).then((result) => {
             if (result.isConfirmed) {
-                let resp = destroyClient(document).then(res =>{
+                destroyClient(document).then(res =>{
                     allClients().then(res =>{
                         Swal.fire(
                             'Eliminado!',

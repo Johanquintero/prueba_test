@@ -88,20 +88,19 @@ export const CreateClient = () => {
                                                 helperText={formik.errors.document && formik.touched.document ? formik.errors.document : ""}
                                             />
                                         </Grid>
+
                                         <Grid item xs={12} sm={3}>
                                             <TextField
                                                 required
                                                 type="date"
                                                 id="birthday"
                                                 name="birthday"
-                                                label="Fecha de nacimiento"
-                                                style={{ margin: 8 }}
+                                                label="Fecha de nacimiento"                                            
                                                 placeholder=""
                                                 variant="outlined"
                                                 onChange={formik.handleChange}
                                                 value={formik.values.birthday}
-                                                fullWidth
-                                                margin="normal"
+                                                fullWidth                         
                                                 InputLabelProps={{
                                                     shrink: true,
                                                 }}

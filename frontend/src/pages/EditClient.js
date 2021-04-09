@@ -113,13 +113,11 @@ export const EditClient = () => {
                                                 id="birthday"
                                                 name="birthday"
                                                 label="Fecha de nacimiento"
-                                                style={{ margin: 8 }}
                                                 placeholder=""
                                                 variant="outlined"
                                                 onChange={formik.handleChange}
                                                 value={moment(formik.values.birthday).format('YYYY-MM-DD')}
                                                 fullWidth
-                                                margin="normal"
                                                 InputLabelProps={{
                                                     shrink: true,
                                                 }}
